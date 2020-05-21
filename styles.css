@@ -1,6 +1,10 @@
+:root {
+  --font: 'Roboto', sans-serif;
+}
+
 html {
   font-family: sans-serif;
-  background: #ffc600;
+  background-color: #F2FE74;
 }
 
 .inbox {
@@ -28,6 +32,7 @@ input:checked + p {
 
 input[type="checkbox"] {
   margin: 20px;
+  padding: 20px;
 }
 
 p {
@@ -35,8 +40,26 @@ p {
   padding: 20px;
   transition: background 0.2s;
   flex: 1;
-  font-family:'helvetica neue';
+  font-family: var(--font);
   font-size: 20px;
   font-weight: 200;
   border-left: 1px solid #D1E2FF;
+}
+
+.refresh {
+  margin-left: 10px;
+  padding: 10px;
+  font-family: var(--font);
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 rgba(0,0,0,0.1);
+}
+
+.button {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-end;
+  max-width: 400px;
+  margin: 30px auto;
 }
